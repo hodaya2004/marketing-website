@@ -1,0 +1,205 @@
+/*  איפוס גלובלי והגדרות בסיס */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #0d0d0d;
+    min-height: 100vh;
+}
+
+.page-container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*  תפריט עליון (Header) */
+header {
+    position: relative;
+    width: 100%;
+    padding: 8px 16px;
+    text-align: center;
+}
+
+/* לוגו משמאל */
+.logo-area {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo-area a {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 12px;
+    color: #000;
+}
+
+.logo-area img {
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.logo-area span {
+    vertical-align: middle;
+}
+
+/* ניווט במרכז */
+.nav-links {
+    display: inline-block;
+}
+
+.nav-links a {
+    margin: 0 8px;
+    font-size: 11px;
+    color: #444;
+}
+
+.nav-links a:hover {
+    color: #000;
+}
+
+/* כפתורי התחברות מימין */
+.auth-area {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.auth-area button {
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    border-radius: 12px;
+    border: 1px solid #d1d5db;
+    background-color: #ffffff;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.auth-area .btn-login {
+    background-color: #0d0d0d;
+    color: #ffffff;
+    border: 1px solid #0d0d0d;
+    font-weight: 500;
+}
+
+.auth-area .btn-signup {
+    margin-left: 4px;
+    color: #0d0d0d;
+}
+
+.auth-area .btn-info {
+    margin-left: 4px;
+    padding: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.auth-area .btn-info img {
+    width: 10px;
+    height: 10px;
+    vertical-align: middle;
+}
+
+/* אזור תוכן מרכזי (Main) */
+main {
+    text-align: center;
+    padding-top: 15vh;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #111111;
+    margin-bottom: 12px;
+    letter-spacing: -0.2px;
+}
+
+/* תיבת הפרומפט (Prompt Box)*/
+.prompt-box {
+    width: 440px;
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 8px 12px 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+}
+
+.prompt-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    color: #111;
+    text-align: left;
+    background: transparent;
+    margin-bottom: 10px;
+    padding: 2px 0;
+}
+
+.prompt-box input::placeholder {
+    color: #8e8ea0;
+}
+
+/*  כפתורי הפעולה בתיבה  */
+.actions-left button,
+.btn-voice {
+    background-color: #f7f7f8;
+    border: 1px solid #e5e5e5;
+    color: #374151;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 10px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
+
+.actions-left button:hover,
+.btn-voice:hover {
+    background-color: #eaeaea;
+}
+
+/* יישור תמונות וטקסט בתוך כל כפתורי הטופס */
+.prompt-box button img {
+    width: 10px;
+    height: 10px;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.prompt-box button span {
+    vertical-align: middle;
+}
+
+/* מיקומים לצדדים */
+.actions-left {
+    float: left;
+}
+
+.actions-left button {
+    margin-right: 4px;
+}
+
+.btn-voice {
+    float: right;
+}

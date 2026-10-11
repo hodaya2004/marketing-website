@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" DIR="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Page</title>
+
+        <!--Google font: Inter -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <div class="page-container">
+            <header>
+                <!-- Logo -->
+                <div class="logo-area">
+                    <a href="index.html">
+                        <img src="img/ChatGPT-logo.png" alt="ChatGPT logo">
+                        <span>ChatGPT</span>
+                    </a>
+                </div>
+
+                <!-- Links -->
+                <nav class="nav-links">
+                    <a href="index.html">Main</a>
+                    <a href="images.html">Images</a>
+                    <a href="agent.html">Agent</a>
+                </nav>
+
+                <!-- Right actions -->
+                <div class="auth-area">
+                    <button type="button" class="btn-login">Log in</button>
+                    <button type="button" class="btn-signup">Sign up for free</button>
+                    <button type="button" class="btn-info"><img src="img/Request-info.png" alt="Request info"></button>
+                </div>
+            </header>
+
+            <main>
+                <h1 class="title">What's on the agenda today?</h1>
+
+                <!-- Prompt box -->
+                <form class="prompt-box">
+                    <input type="text" name="query" placeholder="Ask anything..." aria-label="Ask anything">
+                    <div class="actions-left">
+                        <button type="button">
+                            <img src="img/attach-icon.png" alt="attach icon">
+                            <span>Attach</span>
+                        </button>
+                        <button type="button">
+                            <img src="img/search-icon.png" alt="search icon">
+                            <span>Search</span>
+                        </button>
+                        <button type="button">
+                            <img src="img/study-icon.png" alt="study icon">
+                            <span>Study</span>
+                        </button>
+                        <button type="button">
+                            <img src="img/images-icon.png" alt="image icon">
+                            <span>Create image</span>
+                        </button>
+                    </div>
+                    <button type="button" class="btn-voice">
+                        <img src="img/voice-icon.png" alt="voice icon">
+                        <span>Voice</span>
+                    </button>
+                </form>
+            </main>
+        </div>
+    </body>
+</html>
